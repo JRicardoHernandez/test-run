@@ -103,9 +103,7 @@ export class RackDetailComponent extends BasePage implements OnInit {
   }
 
   public onSelectionChangeBatch(event){
-    console.log( event )
     if(event.id){
-      
       this.form.controls['idBatch'].setValue(event.id);
       this.form.controls['batch'].setValue(`${event.numRegister} - ${event.description}`);
     }   

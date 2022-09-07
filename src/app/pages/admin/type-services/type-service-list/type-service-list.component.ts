@@ -3,7 +3,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { MatPaginatorIntl, PageEvent } from '@angular/material/paginator';
 import { NbToastrService, NbWindowService, NbWindowControlButtonsConfig } from '@nebular/theme';
 import { SweetAlertResult } from 'sweetalert2';
-import { TypeServicesService } from '../../../../@core/backend/common/services/typeServices.service';
+import { TypeServicesService } from '../../../../@core/backend/common/services/type-services.service';
 import { ZoneGeographicService } from '../../../../@core/backend/common/services/zone-geographic.service';
 import { SweetAlertConstants, SweetalertModel } from '../../../../@core/interfaces/auction/sweetalert-model';
 import { ZoneGeographicInterface } from '../../../../@core/interfaces/auction/zone-geographic.model';
@@ -114,7 +114,6 @@ export class TypeServiceListComponent extends BasePage {
     this.list = null;
     this.service.list(pageIndex, pageSize).subscribe(
       (dt: any) => {        
-        console.log(dt);
         this.list = dt.data;
         this.length = dt.count;
       },
@@ -142,11 +141,9 @@ export class TypeServiceListComponent extends BasePage {
   onDeleteConfirm(event): void {
     this.sweetalertQuestion('warning', 'Eliminar', '¿Desea eliminar este registro?').then(
       question => {
-        // console.log(question);
         if (question.isConfirmed) {          
           this.service.delete(event.data.id).subscribe(
             data => {
-              console.log(data);
               this.onLoadFailed('success','Tipo servicio eliminada correctamente', data.message);
               this.read(this.pageEvent.pageIndex, this.pageEvent.pageSize);
             }, err => {
@@ -166,7 +163,6 @@ export class TypeServiceListComponent extends BasePage {
       }
     ).finally(
       () => {
-        console.log('finaliza');
       }
     );
   }

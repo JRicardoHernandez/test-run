@@ -3,7 +3,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { MatPaginatorIntl, PageEvent } from '@angular/material/paginator';
 import { NbToastrService, NbWindowControlButtonsConfig, NbWindowService } from '@nebular/theme';
 import { SweetAlertResult } from 'sweetalert2';
-import { TypeSettelementService } from '../../../../@core/backend/common/services/typeSettelement.service';
+import { TypeSettelementService } from '../../../../@core/backend/common/services/type-settelement.service';
 import { SettlementInterface } from '../../../../@core/interfaces/auction/settlement.model';
 import { SweetAlertConstants } from '../../../../@core/interfaces/auction/sweetalert-model';
 import { BasePage } from '../../../../@core/shared/base-page';

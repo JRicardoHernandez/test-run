@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { DataSource } from 'ng2-smart-table/lib/lib/data-source/data-source';
 import { CatalogApi } from '../api/catalog-api';
-import { TypeWarehousesModel } from '../../../interfaces/auction/typeWarehouses.model';
+import { TypeWarehousesModel } from '../../../interfaces/auction/type-warehouses.model';
 
 @Injectable()
 export class TypeWarehouseService {

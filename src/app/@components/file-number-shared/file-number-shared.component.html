@@ -1,0 +1,74 @@
+<form [formGroup]="formExpediente" (submit)="mostrarInfo()">
+
+    <div class="row">
+
+        <div class="col-md-4" >
+          <div class="form-group">
+            <label for="" class="label">No. Expediente</label>
+            <input formControlName="noExpediente" type="text" nbInput fullWidth id="" placeholder="">
+            <ngx-validation-message label="No. Expediente" 
+                           [showRequired]="noExpediente?.errors?.required && noExpediente.touched">
+            </ngx-validation-message>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="" class="label">Averig Previa</label>
+            <input formControlName="averigPrevia" type="text" nbInput fullWidth id="" placeholder="">
+            <ngx-validation-message label="Averig Previa" 
+                           [showRequired]="averigPrevia?.errors?.required && averigPrevia.touched">
+            </ngx-validation-message>
+          </div>
+          
+        </div>
+    
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="" class="label">Causa Penal</label>
+            <input formControlName="causaPenal" type="text" nbInput fullWidth id="" placeholder="">
+            <ngx-validation-message label="Causa Penal" 
+                           [showRequired]="causaPenal?.errors?.required && causaPenal.touched">
+            </ngx-validation-message>
+          </div>
+          
+        </div>
+    
+      </div>
+    
+      <div class="row">
+    
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="" class="label">Acta Circuns</label>
+            <input formControlName="actaCircuns" type="text" nbInput fullWidth id="" placeholder="">
+            <ngx-validation-message label="Acta Circuns" 
+                           [showRequired]="actaCircuns?.errors?.required && actaCircuns.touched">
+            </ngx-validation-message>
+          </div>
+          
+        </div>
+    
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="" class="label">Toca Penal</label>
+            <input formControlName="tocaPenal" type="text" nbInput fullWidth id="" placeholder="">
+            <ngx-validation-message label="Toca Penal" 
+                           [showRequired]="tocaPenal?.errors?.required && tocaPenal.touched">
+            </ngx-validation-message>
+          </div>
+          
+        </div>
+    
+        <!-- <div class="col-md-4">
+    
+          <div class="form-group right">
+            <label for="" class="label">&nbsp;</label>
+            <button fullWidth type="submit" nbButton status="primary" [disabled]="!formExpediente.valid">Agregar Bienes</button>
+          </div>
+        </div> -->
+        
+      </div>
+
+</form>
+

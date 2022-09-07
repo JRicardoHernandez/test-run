@@ -3,22 +3,24 @@ import { CommonModule } from '@angular/common';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ThemeModule } from '../../../@theme/theme.module';
-import { NbButtonModule, NbCardModule, NbInputModule, NbSelectModule, NbWindowModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbInputModule, NbSelectModule, NbWindowModule, NbDatepickerModule } from '@nebular/theme';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
+import { NgSelectModule } from '@ng-select/ng-select';
+
 import { ComponentsModule } from '../../../@components/components.module';
 
 import { AAccumulatedAssetsRoutingModule } from './a-accumulated-assets-routing.module';
-import { AAccumulatedAssetsDetailComponent } from './a-accumulated-assets-detail/a-accumulated-assets-detail.component';
 import { AAccumulatedAssetsListComponent } from './a-accumulated-assets-list/a-accumulated-assets-list.component';
+
+
 
 
 @NgModule({
   declarations: [
-    AAccumulatedAssetsDetailComponent,
     AAccumulatedAssetsListComponent
   ],
   imports: [
@@ -37,7 +39,9 @@ import { AAccumulatedAssetsListComponent } from './a-accumulated-assets-list/a-a
     NbWindowModule.forChild(),
     MatPaginatorModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    NbDatepickerModule,
+    NgSelectModule
   ]
 })
 export class AAccumulatedAssetsModule { }

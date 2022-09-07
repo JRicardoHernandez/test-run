@@ -23,7 +23,7 @@ import {
 } from '@nebular/theme';
 import {
   TypeGoodstService
-} from '../../../../@core/backend/common/services/typeGoods.service';
+} from '../../../../@core/backend/common/services/type-goods.service';
 import {
   SweetAlertConstants,
   SweetalertModel

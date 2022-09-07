@@ -1,0 +1,40 @@
+<ng-container > 
+
+    <div class="row" >
+        <div class="col-md-4">
+            <div class="form-group"> 
+                    <label class="label">Delegación</label>
+                    <ngx-select  (fetchItems)="getDelegations($event)" 
+                    [data]="delegations" 
+                    [form]="form" 
+                    value="id" 
+                    label="description"
+                    [control]="delegationField" 
+                    (change)="onDelegationsChange($event)">
+                                
+                    </ngx-select>      
+            </div>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-md-4">
+            <div class="form-group"> 
+                    <label class="label">Delegación</label>
+                    <ngx-select  (fetchItems)="getSubDelegations($event)" 
+                    [data]="subdelegations" 
+                    [form]="form" 
+                    value="id" 
+                    label="description"
+                    [control]="subdelegationField" 
+                    (change)="onSubDelegationsChange($event)">
+                                
+                    </ngx-select>      
+            </div>
+        </div>
+    </div>
+
+    
+    
+</ng-container>
+

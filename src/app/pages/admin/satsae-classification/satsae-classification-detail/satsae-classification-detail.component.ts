@@ -74,13 +74,13 @@ export class SatsaeClassificationDetailComponent extends BasePage {
       this.service.register(data).subscribe(data =>{
         this.windowRef.close();
       },err =>{
-        console.log(err);
+        console.error(err);
       })
     }else{
       this.service.update(this.satSae.id,data).subscribe(data =>{
         this.windowRef.close();
       },err =>{
-        console.log(err);
+        console.error(err);
       })
     }
   }

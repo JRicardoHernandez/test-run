@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { NbToastrService, NbWindowControlButtonsConfig, NbWindowService} from '@nebular/theme';
 import { BasePage } from '../../../../@core/shared/base-page';
-import { NonDeliveryReasonsService } from '../../../../@core/backend/common/services/nonDeliveryReasons.service';
+import { NonDeliveryReasonsService } from '../../../../@core/backend/common/services/non-delivery-reasons.service';
 import { NonDeliveryReasonsDetailComponent } from '../non-delivery-reasons-detail/non-delivery-reasons-detail.component';
 import {MatPaginatorIntl, PageEvent} from '@angular/material/paginator';
 import Swal from 'sweetalert2';
-import { NonDeliveryReasonsModel } from '../../../../@core/interfaces/auction/NonDeliveryReasons.model';
+import { NonDeliveryReasonsModel } from '../../../../@core/interfaces/auction/non-delivery-reasons.model';
 import { FormControl, FormGroup } from '@angular/forms';
 
 
@@ -162,7 +162,7 @@ export class NonDeliveryReasonsListComponent extends BasePage {
         this.service.delete(event.data.id).subscribe(data =>{
           this.readReasons();
         },err =>{
-          console.log(err);
+          console.error(err);
         })
        
       }

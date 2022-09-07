@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core'; 
-import { NbMenuService } from '@nebular/theme';
+import { Component, OnInit } from '@angular/core';  
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'ngx-total-doc-received-list',
@@ -7,12 +7,31 @@ import { NbMenuService } from '@nebular/theme';
   styleUrls: ['./total-doc-received-list.component.scss']
 })
 export class TotalDocReceivedListComponent  {
+  
+ 
+  public form: FormGroup;
 
-  constructor(private menuService: NbMenuService) {
+  constructor(
+    private fb: FormBuilder) {  
   }
 
-  goToHome() {
-    this.menuService.navigateHome();
+  ngOnInit(): void {
+    this.prepareForm();
   }
+  private prepareForm() {
+    this.form = this.fb.group({
+      fechaInicial: ['', [Validators.required]],
+      fechaFinal: ['', [Validators.required]],
+      detailReport: ['', [Validators.required]],
+      
+    });}
+
+  public get fechaInicial() { return this.form.get('fechaInicial'); }
+  public get fechaFinal() { return this.form.get('fechaFinal'); }
+  public get detailReport() { return this.form.get('detailReport'); }
+  
+mostrarInfo(): any{
+  console.log(this.form.value)
+}
 
 }

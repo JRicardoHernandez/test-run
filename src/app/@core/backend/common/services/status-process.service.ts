@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 
 import { DataSource } from 'ng2-smart-table/lib/lib/data-source/data-source';
 import { CatalogApi } from '../api/catalog-api';
-import { StatusProcessModel } from '../../../interfaces/auction/statusProcess.model';
+import { StatusProcessModel } from '../../../interfaces/auction/status-process.model';
 
 @Injectable()
 export class StatusProcessService {

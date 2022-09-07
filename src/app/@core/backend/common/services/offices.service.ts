@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { DataSource } from 'ng2-smart-table/lib/lib/data-source/data-source';
 import { CatalogApi } from '../api/catalog-api';
-import { StatusTransferInterface } from '../../../interfaces/auction/statusTransfer.model';
+import { StatusTransferInterface } from '../../../interfaces/auction/status-transfer.model';
 import { OfficesModel } from '../../../interfaces/auction/offices.model';
 
 @Injectable()

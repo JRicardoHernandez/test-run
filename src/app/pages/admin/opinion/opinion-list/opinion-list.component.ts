@@ -169,7 +169,6 @@ export class OpinionListComponent extends BasePage {
       }
     ).finally(
       () => {
-        console.log('finaliza');
       }
     );    
   }

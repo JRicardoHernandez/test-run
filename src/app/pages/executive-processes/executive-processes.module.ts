@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';  
 import { CommonModule } from '@angular/common';
 
-import { ExecutiveProcessesRoutingModule, routedComponents } from './executive-processes-routing.module';
-
 import { ComponentsModule } from '../../@components/components.module';
+
+import { NgSelectModule } from '@ng-select/ng-select';
+
+import { ExecutiveProcessesRoutingModule, routedComponents } from './executive-processes-routing.module';
 
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { ThemeModule } from '../../@theme/theme.module';
@@ -13,11 +15,10 @@ import { ThemeModule } from '../../@theme/theme.module';
 //import { UserModule } from './user/user.module';
 //import { AdminComponent } from './admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NbAutocompleteModule, NbButtonModule, NbCardModule, NbInputModule, NbSelectModule, NbWindowModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbInputModule, NbSelectModule, NbWindowModule } from '@nebular/theme';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({ 
   declarations: [ 
@@ -34,21 +35,19 @@ import { MatSelectModule } from '@angular/material/select';
     Ng2SmartTableModule,
     FormsModule,
     ReactiveFormsModule,
-    ComponentsModule,
     ThemeModule,
     NbCardModule,
     Ng2SmartTableModule,
-    NbSelectModule,
     NbButtonModule,
     NbInputModule,
     NbWindowModule.forChild(),
     MatPaginatorModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule, NgSelectModule
   ],
   exports:[
     
-    ComponentsModule,
+    ComponentsModule, NgSelectModule
     
   ]
 })

@@ -88,13 +88,13 @@ export class SubdelegationDetailComponent extends BasePage {
       this.service.register(data).subscribe(data => {
         this.windowRef.close();
       }, err => {
-        console.log(err);
+        console.error(err);
       })
     } else {
       this.service.update(this.Subdelegation.id, data).subscribe(data => {
         this.windowRef.close();
       }, err => {
-        console.log(err);
+        console.error(err);
       })
     }
 

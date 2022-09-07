@@ -65,13 +65,13 @@ export class RegulatoryDetailComponent extends BasePage {
       this.service.register(data).subscribe(data =>{
         this.windowRef.close();
       },err =>{
-        console.log(err);
+        console.error(err);
       })
     }else{
       this.service.update(this.regulatory.id,data).subscribe(data =>{
         this.windowRef.close();
       },err =>{
-        console.log(err);
+        console.error(err);
       })
     }
   }

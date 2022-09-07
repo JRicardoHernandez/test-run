@@ -5,7 +5,7 @@ import { NbToastrService, NbWindowControlButtonsConfig, NbWindowService } from '
 import { SweetAlertResult } from 'sweetalert2';
 import { TypeRelevantService } from '../../../../@core/backend/common/services/typerelevant.service';
 import { SweetAlertConstants } from '../../../../@core/interfaces/auction/sweetalert-model';
-import { TypeRelevantInterface } from '../../../../@core/interfaces/auction/typeRelevant.model';
+import { TypeRelevantInterface } from '../../../../@core/interfaces/auction/type-relevant.model';
 import { BasePage } from '../../../../@core/shared/base-page';
 import { SweetalertService } from '../../../../shared/sweetalert.service';
 import { TypeRelevantDetailComponent } from '../type-relevant-detail/type-relevant-detail.component';

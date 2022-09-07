@@ -1,0 +1,35 @@
+<nb-card>
+    <nb-card-header *ngIf="title">
+        {{title}}
+    </nb-card-header>
+    <nb-card-body>
+        <div class="row" *ngIf="showSearchBar">
+            <form class="col-md-12">
+                <nb-form-field>
+                    <input type="text" nbInput fullWidth placeholder="Buscar ..." name="filter" [formControl]="searchText">
+                    <button nbSuffix nbButton ghost type="button">
+                        <nb-icon icon="search-outline">
+                        </nb-icon>
+                    </button>
+                </nb-form-field>
+            </form>
+        </div>
+        <div class="row pt-2 scrolleable">
+            <div class="col-md-12">
+                <ng2-smart-table [settings]="settings" [source]="$data | async" (rowSelect)="onItemSelected($event)">
+                </ng2-smart-table>
+            </div>
+        </div>
+    </nb-card-body>
+
+    <nb-card-footer *ngIf="showButtons">
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <button *ngIf="showCancelButton" nbButton status="danger" class="mr-2"
+                    (click)="close()">Cancelar</button>
+                <button *ngIf="showConfirmButton" nbButton status="success" [disabled]="!itemSelected"
+                    (click)="confirm()">Aceptar</button>
+            </div>
+        </div>
+    </nb-card-footer>
+</nb-card>

@@ -169,7 +169,6 @@ export class SaveValuesListComponent extends BasePage {
       }
     ).finally(
       () => {
-        console.log('finaliza');
       }
     );    
   }

@@ -125,7 +125,6 @@ export class ZoneGeographicListComponent extends BasePage {
     this.list = null;
     this.service.list(pageIndex, pageSize).subscribe(
       (dt: any) => {        
-        console.log(dt);
         this.list = dt.data;
         this.length = dt.count;
       },
@@ -153,7 +152,6 @@ export class ZoneGeographicListComponent extends BasePage {
   onDeleteConfirm(event): void {
     this.sweetalertQuestion('warning', 'Eliminar', '¿Desea eliminar este registro?').then(
       question => {
-        // console.log(question);
         if (question.isConfirmed) {          
           this.service.delete(event.data.id_zona_geografica).subscribe(
             data => {

@@ -2,11 +2,11 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { DataSource } from 'ng2-smart-table/lib/lib/data-source/data-source';
 import { CatalogApi } from '../api/catalog-api';
-import { TypeWarehousesModel } from '../../../interfaces/auction/typeWarehouses.model';
+import { TypeSettelementInterface } from '../../../interfaces/auction/type-settelement.model';
 
 @Injectable()
-export class TypeGoodstService {
-    url = 'type-state';
+export class TypeSettelementService {
+    url = 'type-settlement';
     constructor(private api: CatalogApi) { }
 
     get gridDataSource(): DataSource {
@@ -17,11 +17,11 @@ export class TypeGoodstService {
         const data = this.api.list(pageNumber, pageSize,this.url);
         return data;
     }
-    register(legendData: TypeWarehousesModel): Observable<TypeWarehousesModel>{
+    register(legendData: TypeSettelementInterface): Observable<TypeSettelementInterface>{
         return this.api.register(legendData,this.url);
     }
 
-    update(id:number, legendData: TypeWarehousesModel): Observable<TypeWarehousesModel>{
+    update(id:string, legendData: TypeSettelementInterface): Observable<TypeSettelementInterface>{
         return this.api.update(id, legendData,this.url);
     }
 

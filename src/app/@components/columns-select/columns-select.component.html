@@ -1,0 +1,9 @@
+<nb-select [selected]="selectVal()" multiple placeholder="Columnas" class="col-md-3">
+    <nb-select-label>
+        Columnas
+    </nb-select-label>
+    <nb-option [disabled]="selectVal().length < 3 && column.show" [value]="column" *ngFor="let column of columns"
+        (click)="column.show = !column.show; change(column.id, column.show)">
+        {{column.name}}
+    </nb-option>
+</nb-select>

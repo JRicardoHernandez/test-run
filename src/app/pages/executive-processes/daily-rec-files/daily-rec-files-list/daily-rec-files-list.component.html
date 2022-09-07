@@ -1,1 +1,67 @@
-<p>daily-rec-files-list works!</p>
+<nb-card class="cat-card"> 
+    <nb-card-header>
+  
+        <span class="title">
+            CONTROL DIARIO DE RECEPCIÓN DE EXPEDIENTES 
+        </span>
+  
+    </nb-card-header>
+  
+    <nb-card-body>
+
+        <form [formGroup]="form" (submit)="mostrarInfo()">
+            
+            <ngx-deleg-subdeleg-shared [form]="form"></ngx-deleg-subdeleg-shared>
+        
+            <div class="row">
+        
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="label">Recepciones del año:</label>
+                        <input nbInput fullWidth formControlName="year">
+                        <ngx-validation-message label="year" [showRequired]="year?.errors?.required && year.touched"></ngx-validation-message>
+                    </div>
+                </div>
+        
+                <div class="col-lg-2">
+                    <div class="form-group">
+                        <label class="label">Al</label> &nbsp; 
+                          <nb-select fullWidth selected="Enero" formControlName="month">
+                            <nb-option value="Enero">Enero</nb-option>
+                            <nb-option value="Febrero">Febrero</nb-option>
+                            <nb-option value="Marzo">Marzo</nb-option>
+                            <nb-option value="Abril">Abril</nb-option>
+                            <nb-option value="Mayo">Mayo</nb-option>
+                            <nb-option value="Junio">Junio</nb-option>
+                            <nb-option value="Julio">Julio</nb-option>
+                            <nb-option value="Agosto">Agosto</nb-option>
+                            <nb-option value="Septiembre">Septiembre</nb-option>
+                            <nb-option value="Octubre">Octubre</nb-option>
+                            <nb-option value="Noviembre">Noviembre</nb-option>
+                            <nb-option value="Diciembre">Diciembre</nb-option>
+                          </nb-select>
+                          <ngx-validation-message label="month" [showRequired]="month?.errors?.required && month.touched"></ngx-validation-message>
+                    </div>
+                </div>
+      
+                
+                
+                    
+            </div>
+        
+            <div class="form-group">
+                <div class="d-flex justify-content-center">
+                    <!--<button type="submit" nbButton status="primary" [disabled]="!form.valid"
+                        (click)="register()">{{actionBtn}}</button>  Boton con función--> 
+                        <button type="submit" nbButton status="primary" [disabled]="!form.valid">Imprimir Reporte</button>
+                </div>
+            </div>
+        
+
+        </form>
+  
+      
+  
+  </nb-card-body>
+  
+  </nb-card>

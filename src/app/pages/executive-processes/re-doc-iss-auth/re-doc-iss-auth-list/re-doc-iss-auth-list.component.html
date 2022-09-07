@@ -1,1 +1,65 @@
-<p>re-doc-iss-auth-list works!</p>
+<nb-card class="cat-card">  
+    <nb-card-header>
+  
+        <span class="title">
+            REPORTE DE DOCUMENTACIÓN RECIBIDA POR AUTORIDAD EMISORA
+        </span>
+  
+    </nb-card-header>
+  
+    <nb-card-body>
+
+        <form [formGroup]="formDelegation" (submit)="mostrarInfo()">
+
+            <ngx-deleg-subdeleg-shared [form]="formDelegation"></ngx-deleg-subdeleg-shared>
+
+            <div class="row">
+  
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="label">Fecha recepción del:</label>
+                        
+                          <input formControlName="fechaInicial" nbInput
+                                 placeholder="Selección de fecha"
+                                 [nbDatepicker]="formpicker">
+                          <nb-datepicker #formpicker></nb-datepicker>
+                        
+                    </div>
+                    <ngx-validation-message label="fechaInicial" 
+                         [showRequired]="fechaInicial?.errors?.required && fechaInicial.touched">
+                    </ngx-validation-message>
+                </div>
+        
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="label">Al&nbsp;</label>
+                        
+                          <input formControlName="fechaFinal" nbInput
+                                 placeholder="Selección de fecha"
+                                 [nbDatepicker]="formpicker2">
+                          <nb-datepicker #formpicker2></nb-datepicker>
+                        
+                    </div>
+                    <ngx-validation-message label="fechaFinal" 
+                         [showRequired]="fechaFinal?.errors?.required && fechaFinal.touched">
+            </ngx-validation-message>
+                </div>
+                
+                    
+            </div>
+        
+            <div class="form-group">
+                <div class="d-flex justify-content-center">
+                        <button type="submit" nbButton status="primary" [disabled]="!formDelegation.valid">Imprimir Reporte</button>
+                </div>
+            </div>
+
+        </form>
+      
+  
+      
+  
+  
+  </nb-card-body>
+  
+  </nb-card>

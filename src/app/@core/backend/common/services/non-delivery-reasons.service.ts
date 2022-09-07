@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 
 import { DataSource } from 'ng2-smart-table/lib/lib/data-source/data-source';
 import { CatalogApi } from '../api/catalog-api';
-import { NonDeliveryReasonsModel } from '../../../interfaces/auction/NonDeliveryReasons.model';
+import { NonDeliveryReasonsModel } from '../../../interfaces/auction/non-delivery-reasons.model';
 
 @Injectable()
 export class NonDeliveryReasonsService {

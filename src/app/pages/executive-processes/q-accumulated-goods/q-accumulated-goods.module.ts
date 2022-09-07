@@ -1,17 +1,13 @@
-import { NgModule } from '@angular/core'; 
+import { NgModule } from '@angular/core';  
 import { CommonModule } from '@angular/common';
- 
+
 import { ComponentsModule } from '../../../@components/components.module';
 
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ThemeModule } from '../../../@theme/theme.module';
-import { NbButtonModule, NbCardModule, NbInputModule, NbSelectModule, NbWindowModule, NbDatepickerModule, NbActionsModule,} from '@nebular/theme';
-import { Ng2SmartTableModule } from 'ng2-smart-table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
-import { NbCheckboxModule } from '@nebular/theme';
+import { NbAutocompleteModule, NbButtonModule, NbCardModule, NbInputModule, NbDatepickerModule } from '@nebular/theme';
+import { NgSelectModule } from '@ng-select/ng-select';
+
 
 
 import { QAccumulatedGoodsRoutingModule } from './q-accumulated-goods-routing.module';
@@ -27,23 +23,13 @@ import { QAccumulatedGoodsListComponent } from './q-accumulated-goods-list/q-acc
   imports: [
     CommonModule,
     QAccumulatedGoodsRoutingModule,
-    ComponentsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    ComponentsModule,
-    ThemeModule,
-    NbCardModule,
-    Ng2SmartTableModule,
-    NbSelectModule,
-    NbButtonModule,
+    NbAutocompleteModule, 
+    NbButtonModule, 
+    NbCardModule, 
     NbInputModule,
-    NbWindowModule.forChild(),
-    MatPaginatorModule,
-    MatInputModule,
-    MatFormFieldModule,
-    NbCheckboxModule,
-    NbDatepickerModule, 
-    NbActionsModule
+    FormsModule, 
+    ReactiveFormsModule,
+    NgSelectModule, ComponentsModule, NbDatepickerModule
     
   ]
 })

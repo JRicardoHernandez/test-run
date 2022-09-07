@@ -5,9 +5,9 @@ import { NbWindowRef, NB_WINDOW_CONTEXT, NbWindowService, NbToastrService } from
 import { DomSanitizer } from '@angular/platform-browser';
 import { BaseApp } from '../../../../@core/shared/base-app';
 import { STRING_PATTERN } from '../../../../@components/constants';
-import { NonDeliveryReasonsService } from '../../../../@core/backend/common/services/nonDeliveryReasons.service';
+import { NonDeliveryReasonsService } from '../../../../@core/backend/common/services/non-delivery-reasons.service';
 import { BasePage } from '../../../../@core/shared/base-page';
-import { NonDeliveryReasonsModel } from '../../../../@core/interfaces/auction/NonDeliveryReasons.model';
+import { NonDeliveryReasonsModel } from '../../../../@core/interfaces/auction/non-delivery-reasons.model';
 import { SweetAlertConstants } from '../../../../@core/interfaces/auction/sweetalert-model';
 
 

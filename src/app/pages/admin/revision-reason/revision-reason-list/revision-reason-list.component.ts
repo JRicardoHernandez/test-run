@@ -160,7 +160,7 @@ export class RevisionReasonListComponent extends BasePage{
         this.service.delete(event.data.id).subscribe(data =>{
           this.readRevisionReason();
         },err =>{
-          console.log(err);
+          console.error(err);
         })
        
       }

@@ -135,7 +135,7 @@ export class SatClassificationListComponent extends BasePage {
         this.service.delete(event.data.id).subscribe(data =>{
           this.readSatClassification();
         },err =>{
-          console.log(err);
+          console.error(err);
         })
        
       }

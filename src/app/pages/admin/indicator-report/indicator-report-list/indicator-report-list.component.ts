@@ -3,7 +3,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { MatPaginatorIntl, PageEvent } from '@angular/material/paginator';
 import { NbToastrService, NbWindowService, NbWindowControlButtonsConfig } from '@nebular/theme';
 import Swal from 'sweetalert2';
-import { IndicatorReportService } from '../../../../@core/backend/common/services/IndicatorReport.service';
+import { IndicatorReportService } from '../../../../@core/backend/common/services/Indicator-report.service';
 import { IndicatorReport } from '../../../../@core/interfaces/auction/indicator-report';
 import { BasePage } from '../../../../@core/shared/base-page';
 import { IndicatorReportDetailComponent } from '../indicator-report-detail/indicator-report-detail.component';

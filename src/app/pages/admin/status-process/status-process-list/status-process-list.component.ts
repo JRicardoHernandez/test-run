@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { NbToastrService, NbWindowControlButtonsConfig, NbWindowService} from '@nebular/theme';
 import { BasePage } from '../../../../@core/shared/base-page';
-import { StatusProcessService } from '../../../../@core/backend/common/services/statusProcess.service';
+import { StatusProcessService } from '../../../../@core/backend/common/services/status-process.service';
 import { StatusProcessDetailComponent } from '../status-process-detail/status-process-detail.component';
 import {MatPaginatorIntl, PageEvent} from '@angular/material/paginator';
 import Swal from 'sweetalert2';
-import { StatusProcessModel } from '../../../../@core/interfaces/auction/statusProcess.model';
+import { StatusProcessModel } from '../../../../@core/interfaces/auction/status-process.model';
 import { FormControl, FormGroup } from '@angular/forms';
 import { SweetAlertConstants } from '../../../../@core/interfaces/auction/sweetalert-model';
 import { SweetalertService } from '../../../../shared/sweetalert.service';

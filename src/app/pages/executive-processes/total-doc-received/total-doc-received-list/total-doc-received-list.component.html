@@ -1,1 +1,77 @@
-<p>total-doc-received-list works!</p>
+<nb-card class="cat-card"> 
+    <nb-card-header>
+  
+        <span class="title">
+            REPORTE DOCUMENTACIÓN RECIBIDA
+        </span>
+  
+  <!-- Botón para agregar nuevo desactivado por que no lo requiere
+        <div class="add-select">
+            <button (click)="openWindow()" nbButton status="primary">Nueva</button>
+        </div>
+  -->
+  
+    </nb-card-header>
+  
+    <nb-card-body>
+  
+     <!--Modificar nombre para identificar y en el boton-->
+
+     <form [formGroup]="form" (submit)="mostrarInfo()">
+        <div class="row">
+  
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="label">Fecha recepción del:</label>
+                      <input nbInput formControlName="fechaInicial"
+                             placeholder="Selección de fecha"
+                             [nbDatepicker]="formpicker">
+                      <nb-datepicker #formpicker></nb-datepicker>
+                      <ngx-validation-message label="fechaInicial" [showRequired]="fechaInicial?.errors?.required && fechaInicial.touched"></ngx-validation-message>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="label">Al&nbsp;</label>
+                      <input nbInput formControlName="fechaFinal"
+                             placeholder="Selección de fecha"
+                             [nbDatepicker]="formpicker2">
+                      <nb-datepicker #formpicker2></nb-datepicker>
+                      <ngx-validation-message label="fechaFinal" [showRequired]="fechaFinal?.errors?.required && fechaFinal.touched"></ngx-validation-message>
+                </div>
+            </div>
+            
+                
+        </div>
+    
+        
+      
+          <div class="row">
+      
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <label class="label">¿Reporte Detallado?</label> &nbsp; 
+                      <nb-select fullWidth selected="No" formControlName="detailReport">
+                        <nb-option value="No">No</nb-option>
+                        <nb-option value="Si">Si</nb-option>
+                    </nb-select>
+                    <ngx-validation-message label="detailReport" [showRequired]="detailReport?.errors?.required && detailReport.touched"></ngx-validation-message>
+                </div>
+            </div>
+          </div>
+      
+          <div class="form-group">
+              <div class="d-flex justify-content-center">
+                  <!--<button type="submit" nbButton status="primary" [disabled]="!form.valid"
+                      (click)="register()">{{actionBtn}}</button>  Boton con función--> 
+                      <button type="submit" nbButton status="primary" [disabled]="!form.valid">Imprimir Reporte</button>
+              </div>
+          </div>
+     </form>
+     
+  
+  
+  </nb-card-body>
+  
+  </nb-card>

@@ -8,7 +8,7 @@ import { NbWindowRef, NbWindowService, NB_WINDOW_CONTEXT } from '@nebular/theme'
 import { BehaviorSubject } from 'rxjs';
 
 
-import {IndicatorReportService   } from '../../../../@core/backend/common/services/IndicatorReport.service';
+import {IndicatorReportService   } from '../../../../@core/backend/common/services/Indicator-report.service';
 
 @Component({
   selector: 'ngx-indicator-report-detail',

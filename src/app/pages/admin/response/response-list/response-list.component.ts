@@ -121,7 +121,6 @@ export class ResponseListComponent extends BasePage implements OnInit {
     this.list = null;
     this.service.list(pageIndex, pageSize).subscribe(
       (dt: any) => {
-        console.log(dt.data)
         this.list = dt.data;
         this.length = dt.count;
       },

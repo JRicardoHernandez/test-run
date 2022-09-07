@@ -50,7 +50,7 @@ export class ThirdPartyCompanyDetailComponent extends BaseApp {
       this.service.register(this.form.value).subscribe(data =>{
         this.windowRef.close();
       },err =>{
-        console.log(err);
+        console.error(err);
       })
     }else{
       let params = {
@@ -61,7 +61,7 @@ export class ThirdPartyCompanyDetailComponent extends BaseApp {
       this.service.update(this.data.id,params).subscribe(data =>{
        this.windowRef.close();
       },err =>{
-        console.log(err);
+        console.error(err);
       })
     }
   }

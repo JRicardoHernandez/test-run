@@ -2,36 +2,59 @@
   <nb-card-header>
 
       <span class="title">
-        Reporte Acumulado de Bienes Trimestral
+        REPORTE ACUMULADO DE BIENES TRIMESTRAL
       </span>
 
-<!-- Botón para agregar nuevo desactivado por que no lo requiere
-      <div class="add-select">
-          <button (click)="openWindow()" nbButton status="primary">Nueva</button>
-      </div>
--->
 
   </nb-card-header>
 
   <nb-card-body>
 
-      <div [formGroup]="searchForm" class="form-group row">
-          <div class="col-md-1 mt-2">
-              <label class="control-label">Buscar: </label>
-          </div>
-          <div class="col-md-4">
-              <input type="text" formControlName="text" class="form-control" autofocus />
-          </div>
-      </div>
+    <form [formGroup]="formDelegation" (submit)="mostrarInfo()">
 
-      <ng2-smart-table [settings]="settings" [source]="list" (delete)="onDeleteConfirm($event)"
-          (edit)="editRow($event)">
-      </ng2-smart-table>
-      
-      <mat-paginator [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"
-          (page)="changesPage($event)" [pageIndex]="pageEvent.pageIndex">
-      </mat-paginator>
+        <ngx-deleg-subdeleg-shared [form]="formDelegation"></ngx-deleg-subdeleg-shared>
 
-  </nb-card-body>
+        <div class="row">
+
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="label">Del</label>
+                    <input formControlName="fechaInicial" nbInput
+                               placeholder="Selección de fecha"
+                               [nbDatepicker]="formpicker">
+                        <nb-datepicker #formpicker></nb-datepicker>
+                </div>
+                <ngx-validation-message label="fechaInicial" 
+                         [showRequired]="fechaInicial?.errors?.required && fechaInicial.touched">
+                    </ngx-validation-message>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="label">Al&nbsp;</label>
+                    <input formControlName="fechaFinal" nbInput
+                               placeholder="Selección de fecha"
+                               [nbDatepicker]="formpicker2">
+                        <nb-datepicker #formpicker2></nb-datepicker>
+                </div>
+                <ngx-validation-message label="fechaFinal" 
+                         [showRequired]="fechaFinal?.errors?.required && fechaFinal.touched">
+                </ngx-validation-message>
+            </div>
+            
+                
+        </div>
+    
+        <div class="form-group">
+            <div class="d-flex justify-content-center">
+                    <button type="submit" nbButton status="primary" [disabled]="!formDelegation.valid">Imprimir Reporte</button>
+            </div>
+        </div>
+
+    </form>
+    
+
+
+</nb-card-body>
 
 </nb-card>

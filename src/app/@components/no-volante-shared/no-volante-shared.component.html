@@ -1,0 +1,304 @@
+<div class="row">
+
+    <div class="col-lg-6">
+
+      <nb-card>
+
+        <nb-card-header>Formulario de No. Volantes</nb-card-header>
+
+        <nb-card-body>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">No. Volante</label>
+                <div class="col-sm-4">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <label  class="label col-sm-2 col-form-label">Tipo Volante</label>
+                <div class="col-sm-4">
+                    <nb-select fullWidth selected="Seleccione">
+                        <nb-option value="1">Administrativo</nb-option>
+                        <nb-option value="2">Procesal</nb-option>
+                        <nb-option value="3">Admin. Trans.</nb-option>
+                        <nb-option value="4">Transferente</nb-option>
+                    </nb-select>
+                </div>    
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Fecha recepción</label>
+                <div class="col-sm-10">
+                  <input formControlName="fechaInicial" nbInput
+                                 placeholder="Selección de fecha"
+                                 [nbDatepicker]="formpicker">
+                          <nb-datepicker #formpicker></nb-datepicker>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Consecutivo diario</label>
+                <div class="col-sm-10">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Avergi. Previa</label>
+                <div class="col-sm-10">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Causa Penal</label>
+                <div class="col-sm-10">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">No. Amparo</label>
+                <div class="col-sm-10">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Toca Penal</label>
+                <div class="col-sm-10">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">No. Oficio</label>
+                <div class="col-sm-10">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Fecha Oficio</label>
+                <div class="col-sm-10">
+                  <input formControlName="fechaInicial" nbInput
+                                 placeholder="Selección de fecha"
+                                 [nbDatepicker]="formpicker">
+                          <nb-datepicker #formpicker></nb-datepicker>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Consecutivo diario</label>
+                <div class="col-sm-10">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                      <label class="label">Descripción del asunto</label>
+                      <textarea nbInput fullWidth placeholder=""></textarea>
+                  </div>
+                </div>
+            </div>
+
+          
+
+
+        </nb-card-body>
+
+      </nb-card>
+
+    </div>
+  
+    <div class="col-lg-6">
+  
+      <nb-card>
+
+        <nb-card-header>Expediente</nb-card-header>
+
+        <nb-card-body>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">No expediente</label>
+                <div class="col-sm-4">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+
+                <label class="label col-sm-2 col-form-label">Remitente</label>
+                <div class="col-sm-4">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Asunto</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>               
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Desahogo Asunto</label>
+                <div class="col-sm-8">
+                  <input  nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Ciudad</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Entidad Federativa</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Clave única</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="" status="warning">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Transferente</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="" status="info">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="" status="info">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Emisora</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="" status="danger">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="" status="danger">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Autoridad</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="" status="success">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="" status="success">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Autoridad Emisora</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Ministeria Público</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Juzgado</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Indiciado</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Delito</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Vía Recepción</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Área Destino</label>
+                <div class="col-sm-2">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+                <div class="col-sm-8">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="label col-sm-2 col-form-label">Destinatario</label>
+                <div class="col-sm-10">
+                  <input nbInput fullWidth placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label">Justificación del conocimiento</label>
+                        <textarea nbInput fullWidth placeholder=""></textarea>
+                    </div>
+                  </div>
+            </div>
+
+
+        </nb-card-body>
+
+      </nb-card>
+  
+    </div>
+</div>
+  

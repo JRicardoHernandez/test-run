@@ -5,7 +5,7 @@ import { BasePage } from '../../../../@core/shared/base-page';
 import { SweetAlertConstants } from '../../../../@core/interfaces/auction/sweetalert-model';
 import { SweetalertService } from '../../../../shared/sweetalert.service';
 import { FormControl, FormGroup } from '@angular/forms';
-import { StateOfRepublicService } from '../../../../@core/backend/common/services/StateOFRepublic.service';
+import { StateOfRepublicService } from '../../../../@core/backend/common/services/state-of-republic.service';
 import { SateDetailComponent } from '../sate-detail/sate-detail.component';
 
 @Component({

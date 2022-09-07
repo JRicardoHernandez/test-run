@@ -1,1 +1,116 @@
-<p>mass-app-val-upd-list works!</p>
+<nb-card class="cat-card"> 
+
+    <nb-card-header>PROCESO DE ACTUALIZACIÓN MASIVA DE VALOR AVALÚO</nb-card-header>
+    
+<nb-card-body>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <div class="d-flex justify-content-center">
+           <button type="submit" nbButton status="primary" >Abrir archivo de MS Excel 4.0</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <div class="d-flex justify-content-center">
+           <button type="submit" nbButton status="primary" >Abrir archivo de texto CSV</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <div class="d-flex justify-content-center">
+           <button type="submit" nbButton status="primary" >Ejecutar Proceso</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="row">
+
+        <div class="col-md-2">
+          <div class="form-group">
+            <label for="" class="label">Registros Leídos</label>
+            <input type="text" nbInput fullWidth id="" placeholder="">
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="form-group">
+            <label for="" class="label">Registros Procesados</label>
+            <input type="text" nbInput fullWidth id="" placeholder="">
+          </div>
+        </div>
+
+        
+
+      </div>
+</nb-card-body>
+</nb-card>
+
+<nb-card class="cat-card"> 
+  <nb-card-header>Previsualización de Datos</nb-card-header>
+
+<nb-card-body>
+
+  <ng2-smart-table class="my-table" [settings]="settings" [source]="data" (deleteConfirm)="onDeleteConfirm($event)"></ng2-smart-table>
+
+  <div class="row">
+
+    <div class="col-md-2">
+      <div class="form-group">
+        <label for="" class="label">&nbsp;</label>
+        <input type="" nbInput fullWidth id="" placeholder="Estado del bien:">
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-group">
+        <nb-radio-group status="success" [(value)]="radioGroupValue">
+          <nb-radio 
+            [value]="'Disponible'">
+            Disponible
+          </nb-radio>
+          <nb-radio
+            [value]="'No Disponible'">
+            No Disponible
+          </nb-radio>
+          </nb-radio-group>
+      </div>
+
+    </div>
+    
+    <div class="col-md-6 ">
+      <div class="form-group right">
+        <label for="" class="label">&nbsp;</label>
+        <button type="submit" nbButton>Insertar vía Archivo plano</button>
+    </div>
+
+
+  </div>
+</div>
+
+
+</nb-card-body>
+
+</nb-card>
+
+
+
+<!--
+<div class="row">
+
+<nb-layout>
+
+<nb-layout-column>
+<ng2-smart-table class="my-table" [settings]="settings" [source]="data"></ng2-smart-table>
+</nb-layout-column>
+
+</nb-layout>
+
+</div>
+-->
+
+

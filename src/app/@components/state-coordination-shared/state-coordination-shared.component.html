@@ -1,0 +1,83 @@
+<div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+          <label class="label">Coordinación Regional</label>
+          <input  nbInput fullWidth  placeholder="">
+      </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+        <label class="label">Usuario</label>
+        <input  nbInput fullWidth  placeholder="">
+        </div>
+    </div>
+
+    <div class="col-md-1">
+        <div class="form-group">
+        <label class="label">No. Volante</label>
+        <input  nbInput fullWidth  placeholder="">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+        <label class="label">Transferente</label>
+        <input  nbInput fullWidth  placeholder="">
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+        <label class="label">Fecha Volante</label>
+        <input nbInput
+               placeholder="Selección de fecha"
+               [nbDatepicker]="formpicker2">
+              <nb-datepicker #formpicker2></nb-datepicker>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label class="label">Emisora</label>
+            <input  nbInput fullWidth  placeholder="">
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+        <label class="label">Tipo Volante</label>
+        <nb-select fullWidth selected="Seleccione">
+            <nb-option value="No">No</nb-option>
+            <nb-option value="Si">Si</nb-option>
+        </nb-select>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+        <label class="label">Autoridad</label>
+        <input  nbInput fullWidth  placeholder="">
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group right">
+          <label for="" class="label">&nbsp;</label>
+          <button fullWidth type="submit" status="primary" nbButton>Consulta</button>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group left">
+          <label for="" class="label">&nbsp;</label>
+          <button fullWidth type="submit" status="primary" nbButton>Reporte</button>
+        </div>
+      </div>
+
+</div>
+

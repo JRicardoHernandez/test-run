@@ -23,7 +23,7 @@ import {
 } from '@nebular/theme';
 import {
   StatusTransferService
-} from '../../../../@core/backend/common/services/statusTrasnsfer.service';
+} from '../../../../@core/backend/common/services/status-trasnsfer.service';
 import { SweetAlertConstants, SweetalertModel } from '../../../../@core/interfaces/auction/sweetalert-model';
 import {
   BaseApp

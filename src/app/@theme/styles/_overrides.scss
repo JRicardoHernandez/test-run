@@ -9,3 +9,16 @@
     }
   }
 }
+
+.ng-select.custom .ng-select-container {
+  background-color: #f7f9fc;
+  border-color: #e4e9f2;
+  color: #222b45;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  height: 40px !important;
+}
+
+.ng-select.custom.ng-invalid.ng-touched .ng-select-container {
+  border-color: #ff3d71 !important;
+}

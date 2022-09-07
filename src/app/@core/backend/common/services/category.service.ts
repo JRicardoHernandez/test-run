@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { DataSource } from 'ng2-smart-table/lib/lib/data-source/data-source';
 
 import { CategoryApi } from '../api/category.api';
-import { FetchedSubCategoriesModel, ImageCategoryData } from '../../../interfaces/auction/FetchedSubCategories';
+import { FetchedSubCategoriesModel, ImageCategoryData } from '../../../interfaces/auction/fetched-sub-categories';
 import { HttpEvent } from '@angular/common/http';
 
 @Injectable()

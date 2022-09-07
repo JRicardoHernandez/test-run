@@ -1,4 +1,4 @@
-import {SubCategoryModel} from "./subCategory.model";
+import {SubCategoryModel} from "./sub-category.model";
 
 export class FetchedCategoriesModel {
 

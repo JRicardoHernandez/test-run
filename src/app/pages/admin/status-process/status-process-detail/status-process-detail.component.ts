@@ -5,9 +5,9 @@ import { NbWindowRef, NB_WINDOW_CONTEXT, NbWindowService, NbToastrService } from
 import { DomSanitizer } from '@angular/platform-browser';
 import { BaseApp } from '../../../../@core/shared/base-app';
 import { STRING_PATTERN } from '../../../../@components/constants';
-import { StatusProcessService } from '../../../../@core/backend/common/services/statusProcess.service';
+import { StatusProcessService } from '../../../../@core/backend/common/services/status-process.service';
 import { BasePage } from '../../../../@core/shared/base-page';
-import { StatusProcessModel } from '../../../../@core/interfaces/auction/statusProcess.model';
+import { StatusProcessModel } from '../../../../@core/interfaces/auction/status-process.model';
 import { SweetAlertConstants } from '../../../../@core/interfaces/auction/sweetalert-model';
 
 @Component({

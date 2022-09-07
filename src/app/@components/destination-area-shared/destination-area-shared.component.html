@@ -1,0 +1,40 @@
+<ng-container [formGroup]="form">
+    <div class="row"> 
+        <div class="col-md-1">
+          <div class="form-group">
+              <label class="label">Área Destino</label>
+              <input  nbInput fullWidth  placeholder="" [formControlName]="noAreaDestino">
+          </div>
+          
+        </div>
+      
+          <div class="col-md-2">
+              <div class="form-group">
+                  <label class="label">&nbsp;</label>
+                  <input  nbInput fullWidth  placeholder="" [formControlName]="claveAreaDestino">
+              </div>
+             
+          </div>
+  </div>
+  
+  <div class="row">
+          <div class="col-md-4">
+              <div class="form-group">
+                  <input  nbInput fullWidth  placeholder="" [formControlName]="descriptionAreaDestino">
+              </div>
+             
+          </div>
+  </div>
+  
+  <div class="row">
+      <div class="col-md-4">
+          <div class="form-group">
+              <input  nbInput fullWidth  placeholder="" [formControlName]="nameAreaDestino">
+          </div>
+         
+      </div>
+  </div>
+  
+  
+</ng-container>
+

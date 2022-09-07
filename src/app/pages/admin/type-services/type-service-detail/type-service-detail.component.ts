@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { NbWindowRef, NB_WINDOW_CONTEXT, NbWindowService, NbToastrService } from '@nebular/theme';
-import { TypeServicesService } from '../../../../@core/backend/common/services/typeServices.service';
+import { TypeServicesService } from '../../../../@core/backend/common/services/type-services.service';
 import { ZoneGeographicService } from '../../../../@core/backend/common/services/zone-geographic.service';
 import { SweetAlertConstants, SweetalertModel } from '../../../../@core/interfaces/auction/sweetalert-model';
 import { TypeServicesInterface } from '../../../../@core/interfaces/auction/typeservices.model';

@@ -49,13 +49,13 @@ export class EntfedDetailComponent extends BaseApp {
       this.service.register(this.form.value).subscribe(data =>{
         this.windowRef.close();
       },err =>{
-        console.log(err);
+        console.error(err);
       })
     }else{
       this.service.update(this.data.id,this.form.value).subscribe(data =>{
        this.windowRef.close();
       },err =>{
-        console.log(err);
+        console.error(err);
       })
     }
   }

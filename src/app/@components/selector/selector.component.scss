@@ -1,0 +1,48 @@
+:host ::ng-deep ng2-st-tbody-edit-delete {
+  display: flex !important;
+  height: 0 !important;
+}
+
+:host
+  ::ng-deep
+  ng2-st-tbody-custom
+  a.ng2-smart-action.ng2-smart-action-custom-custom {
+  font-size: 20px !important;
+}
+
+:host
+  ::ng-deep
+  ng2-st-tbody-custom
+  a.ng2-smart-action.ng2-smart-action-custom-custom:hover {
+  color: #5dcfe3;
+}
+.scrolleable {
+  max-height: 150px;
+  min-width: 350px;
+  max-width: 900px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.scrolleable::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrolleable::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ccc; /* color of the tracking area */
+}
+
+.scrolleable::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.scrolleable::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}

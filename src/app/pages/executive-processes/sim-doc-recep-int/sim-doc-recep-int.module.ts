@@ -7,6 +7,8 @@ import { SimDocRecepIntRoutingModule } from './sim-doc-recep-int-routing.module'
 import { SimDocRecepIntDetailComponent } from './sim-doc-recep-int-detail/sim-doc-recep-int-detail.component';
 import { SimDocRecepIntListComponent } from './sim-doc-recep-int-list/sim-doc-recep-int-list.component';
 
+import { NbAutocompleteModule, NbButtonModule, NbCardModule, NbInputModule, NbDatepickerModule, } from '@nebular/theme';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { SimDocRecepIntListComponent } from './sim-doc-recep-int-list/sim-doc-re
   imports: [
     CommonModule,
     SimDocRecepIntRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    NbAutocompleteModule, NbButtonModule, NbCardModule, NbInputModule, NbDatepickerModule,
   ]
 })
 export class SimDocRecepIntModule { }

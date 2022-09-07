@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 import { DataSource } from 'ng2-smart-table/lib/lib/data-source/data-source';
 import { CatalogApi } from '../api/catalog-api';
 import { MailboxInterface } from '../../../interfaces/auction/mailbox.model';
-import { TypeRelevantInterface } from '../../../interfaces/auction/typeRelevant.model';
+import { TypeRelevantInterface } from '../../../interfaces/auction/type-relevant.model';
 
 @Injectable()
 export class TypeRelevantService {

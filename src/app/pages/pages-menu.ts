@@ -241,399 +241,57 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'Catalogos',
     icon: 'folder',
     children: [
-      {
-        title: 'Abogados',
-        link: '/pages/admin/lawyer',
-      },
-      {
-        title: 'Aclaraciones',
-        link: '/pages/admin/clarification',
-      },
-      {
-        title: 'Almacenes',
-        link: '/pages/admin/warehouse',
-      },
-      {
-        title: 'Asentamientos',
-        link: '/pages/admin/settlement',
-      },
-      {
-        title: 'Banco',
-        link: '/pages/admin/bank',
-      },
-      {
-        title: 'Bateria',
-        link: '/pages/admin/battery',
-      },
-      {
-        title: 'Bodega',
-        link: '/pages/admin/storehouse'
-      },
-      {
-        title: 'Bovedas',
-        link: '/pages/admin/safe'
-      },
-      {
-        title: 'Categorias',
-        link: '/pages/admin/catalogs/categories',
-      },
-      {
-        title: 'Clasificación SIAB',
-        link: '/pages/admin/siab-clasification',
-      },
-      {
-        title: 'Códigos postales',
-        link: '/pages/admin/zip-code',
-      },
-      {
-        title: 'Día festivo',
-        link: '/pages/admin/holiday',
-      },
-      {
-        title: 'Deductivas',
-        link: '/pages/admin/deductives',
-      },
-      {
-        title: 'Deductivas Verificación',
-        link: '/pages/admin/deductive-verification',
-      },
-      {
-        title: 'Delegaciones de estado',
-        link: '/pages/admin/delegation-state',
-      },
-      {
-        title: 'Delegaciones regionales',
-        link: '/pages/admin/regional-delegation',
-      },
-      {
-        title: 'Emisora',
-        link: '/pages/admin/station',
-      },
-      {
-        title: 'Estado',
-        link: '/pages/admin/state-of-republic',
-      },
-      {
-        title: 'Estatus general',
-        link: '/pages/admin/general-status',
-      },
-      {
-        title: 'Estatus proceso',
-        link: '/pages/admin/status-process',
-      },
-      {
-        title: 'Fracciones',
-        link: '/pages/admin/fractions',
-      },
-      {
-        title: 'Genericos',
-        link: '/pages/admin/generics',
-      },
-      {
-        title: 'Leyendas',
-        link: '/pages/admin/legends/official',
-      },
-      {
-        title: 'Localidades',
-        link: '/pages/admin/localitys',
-      },
-      {
-        title: 'Motivos no entrega',
-        link: '/pages/admin/reasons/non-delivery-reasons',
-      },
-      {
-        title: 'Municipios',
-        link: '/pages/admin/municipalitys',
-      },
-      {
-        title: 'Normas',
-        link: '/pages/admin/norms',
-      },
-      {
-        title: 'Parrafos',
-        link: '/pages/admin/paragraphs',
-      },
-      {
-        title: 'Preguntas',
-        link: '/pages/admin/question',
-      },
-      {
-        title: 'Procesos SISE',
-        link: '/pages/admin/siseProcess',
-      },
-      {
-        title: 'Tipo Siniestro',
-        link: '/pages/admin/sinister',
-      },
-      {
-        title: 'Tipo de Almacenes',
-        link: '/pages/admin/typewarehouses',
-      },
-      // {
-      //   title: 'Tipo Asentamiento',
-      //   link: '/pages/admin/typesettelement',
-      // },
-      {
-        title: 'Tipo Bienes',
-        link: '/pages/admin/typegood',
-      },
-      {
-        title: 'Tipo Docto',
-        link: '/pages/admin/typedocto',
-      },
-      {
-        title: 'Estado Transferencia',
-        link: '/pages/admin/statustransfer',
-      },
-      // {
-      //   title: 'Estatus Buzon',
-      //   link: '/pages/admin/statusmailbox',
-      // },
-      {
-        title: 'Tipo relevante',
-        link: '/pages/admin/typerelevant',
-      },
-      // {
-      //   title: 'Transferentes',
-      //   link: '/pages/admin/transferentes',
-      // },
-      {
-        title: 'Tipo orden servicio',
-        link: '/pages/admin/typeorderservices',
-      },
-      {
-        title: 'Despachos',
-        link: '/pages/admin/offices',
-      },
-      {
-        title: 'Donatorios',
-        link: '/pages/admin/grantees',
-      },
-      {
-        title: 'Edos x Coor',
-        link: '/pages/admin/edosxcoor',
-      },
-      {
-        title: 'Emisoras',
-        link: '/pages/admin/station',
-      },
-      {
-        title: 'Ciudades',
-        link: '/pages/admin/city',
-      },
-      {
-        title: 'Delegaciones',
-        link: '/pages/admin/delegation',
-      },
-      {
-        title: 'Detalle Delegaciones',
-        link: '/pages/admin/detail-delegation'
-      },
-
-      {
-        title: 'SubDelegaciones',
-        link: '/pages/admin/subdelegation',
-      },
-      {
-        title: 'Concepto Pagos',
-        link: '/pages/admin/payments-concept',
-      },
-      {
-        title: 'Notarios',
-        link: '/pages/admin/notary'
-      },
-      {
-        title: 'Casilleros',
-        link: '/pages/admin/locker'
-      },
-      {
-        title: 'Juzgados',
-        link: '/pages/admin/court'
-      },
-      {
-        title: 'Conclusion siniestros',
-        link: '/pages/admin/claim-conclusion'
-      },
-      {
-        title: 'Peritos',
-        link: '/pages/admin/proficient'
-      },
-      {
-        title: 'Medio imagen',
-        link: '/pages/admin/half-image'
-      },
-      {
-        title: 'Medio fotografia',
-        link: '/pages/admin/medium-photography'
-      },
-      {
-        title: 'Departamentos',
-        link: '/pages/admin/departament'
-      },
-      {
-        title: 'Tipo Bien',
-        link: '/pages/admin/good-type'
-      },
-      {
-        title: 'Subtipo bien',
-        link: '/pages/admin/good-subtype'
-      },
-      {
-        title: 'Ssubtipo bien',
-        link: '/pages/admin/good-ssubtype'
-      },
-      {
-        title: 'Sssubtipo bien',
-        link: '/pages/admin/good-sssubtype'
-      },
-      {
-        title: 'Situacion Bien',
-        link: '/pages/admin/good-situation'
-      },
+      { title: 'Abogados', link: '/pages/admin/lawyer' },
+      { title: 'Aclaraciones', link: '/pages/admin/clarification' },
+      { title: 'Almacenes', link: '/pages/admin/warehouse' },
+      { title: 'Asentamientos', link: '/pages/admin/settlement' },
+      { title: 'Banco', link: '/pages/admin/bank' },
+      { title: 'Bateria', link: '/pages/admin/battery' },
+      { title: 'Bodega', link: '/pages/admin/storehouse' },
+      { title: 'Bovedas', link: '/pages/admin/safe' },
+      { title: 'Casilleros', link: '/pages/admin/locker' },
+      { title: 'Categorias', link: '/pages/admin/catalogs/categories' },
+      { title: 'Ciudades', link: '/pages/admin/city' },
       {
         title: 'Clasificacion Institucion',
         link: '/pages/admin/institution-classification'
-      },
-      {
-        title: 'Instituciones Emisoras',
-        link: '/pages/admin/issuing-institution'
-      },
-      {
-        title: 'MinPub',
-        link: '/pages/admin/minpub'
-      },
-      {
-        title: 'Personas',
-        link: '/pages/admin/person'
-      },
-      {
-        title: 'Motivo Revision',
-        link: '/pages/admin/revision-reason'
       },
       {
         title: 'Clasificacion SatSae',
         link: '/pages/admin/satsae-classification'
       },
       {
-        title: 'Regulatory',
-        link: '/pages/admin/regulatory'
+        title: 'Clasificación SIAB',
+        link: '/pages/admin/siab-clasification'
+      },
+      { title: 'Concepto Pagos', link: '/pages/admin/payments-concept' },
+      {
+        title: 'Conclusion siniestros',
+        link: '/pages/admin/claim-conclusion'
+      },
+      { title: 'Código estado', link: '/pages/admin/status-code' },
+      { title: 'Códigos postales', link: '/pages/admin/zip-code' },
+      { title: 'Deductivas', link: '/pages/admin/deductives' },
+      {
+        title: 'Deductivas Verificación',
+        link: '/pages/admin/deductive-verification'
+      },
+      { title: 'Delegaciones', link: '/pages/admin/delegation' },
+      {
+        title: 'Delegaciones de estado',
+        link: '/pages/admin/delegation-state'
       },
       {
-        title: 'Lotes',
-        link: '/pages/admin/batch'
+        title: 'Delegaciones regionales',
+        link: '/pages/admin/regional-delegation'
       },
+      { title: 'Departamentos', link: '/pages/admin/departament' },
+      { title: 'Despachos', link: '/pages/admin/offices' },
       {
-        title: 'Código estado',
-        link: '/pages/admin/status-code'
+        title: 'Detalle Delegaciones',
+        link: '/pages/admin/detail-delegation'
       },
-      {
-        title: 'Guarda Valores',
-        link: '/pages/admin/save-values'
-      },
-      {
-        title: 'Identificador',
-        link: '/pages/admin/identifier'
-      },
-      {
-        title: 'Indiciados',
-        link: '/pages/admin/indiciados'
-      },
-      {
-        title: 'Dictamen',
-        link: '/pages/admin/opinion'
-      },
-      {
-        title: 'Penalizaciones',
-        link: '/pages/admin/penalty'
-      },
-      {
-        title: 'Subtipo Bienes',
-        link: '/pages/admin/goods-subtype'
-      },
-      {
-        title: 'Sustentos Legales',
-        link: '/pages/admin/legal-support'
-      },
-      {
-        title: 'Sat Subclasificacion',
-        link: '/pages/admin/sat-subclasification'
-      },
-      {
-        title: 'Sat Clasificacion',
-        link: '/pages/admin/sat-clasification'
-      },
-      {
-        title: 'Reporte Indicadores',
-        link: '/pages/admin/indicator-report'
-      },
-      {
-        title: 'Procedencia',
-        link: '/pages/admin/origin'
-      },
-      {
-        title: 'Procedencia Cisi',
-        link: '/pages/admin/origin-cisi'
-      },
-      {
-        title: 'Puntuaciones',
-        link: '/pages/admin/score'
-      },
-      {
-        title:'R Asunt Dic',
-        link:'/pages/admin/r-asunt-dic'
-      },
-      {
-        title:'Tipo de Servicios',
-        link:'/pages/admin/type-services'
-      },  
-      {
-        title:'Zona Geográficas',
-        link:'/pages/admin/zone-geographic'
-      },
-      {
-        title: 'Racks',
-        link: '/pages/admin/rack'
-      },
-      {
-        title: 'Respuestas',
-        link: '/pages/admin/response'
-      },
-      {
-        title: 'Respuestas REPUVE',
-        link: '/pages/admin/response-repuve'
-      },
-      {
-        title: 'Servicios',
-        link: '/pages/admin/service-cat'
-      },
-      {
-        title: 'Series IFAI',
-        link: '/pages/admin/ifai-serie'
-      },
-      {
-        title: 'Empresa terceros',
-        link: '/pages/admin/third-company'
-      },
-      {
-        title: 'Entfed',
-        link: '/pages/admin/entfed'
-      },
-      {
-        title: 'Estado repuves',
-        link: '/pages/admin/repuve'
-      },
-      {
-        title: 'Gestión',
-        link: '/pages/admin/management'
-      },
-      {
-        title: 'Etiqutas bien',
-        link: '/pages/admin/label-okey'
-      },
-      {
-        title: 'Etapas',
-        link: '/pages/admin/stages'
-      },
+      { title: 'Dictamen', link: '/pages/admin/opinion' },
       {
         title: 'Documentos resarcimiento',
         link: '/pages/admin/doc-resarcimiento'
@@ -646,20 +304,102 @@ export const MENU_ITEMS: NbMenuItem[] = [
         title: 'Documentos resarcimiento sat xml',
         link: '/pages/admin/doc-resarcimiento-sat-xml'
       },
-       {
-        title: 'Estatus sinisestros',
-        link: '/pages/admin/claims-status'
+      { title: 'Donatorios', link: '/pages/admin/grantees' },
+      { title: 'Día festivo', link: '/pages/admin/holiday' },
+      { title: 'Edos x Coor', link: '/pages/admin/edosxcoor' },
+      { title: 'Emisora', link: '/pages/admin/station' },
+      { title: 'Emisoras', link: '/pages/admin/station' },
+      { title: 'Empresa terceros', link: '/pages/admin/third-company' },
+      { title: 'Entfed', link: '/pages/admin/entfed' },
+      { title: 'Estado', link: '/pages/admin/state-of-republic' },
+      {
+        title: 'Estado Transferencia',
+        link: '/pages/admin/statustransfer'
+      },
+      { title: 'Estado repuves', link: '/pages/admin/repuve' },
+      { title: 'Estatus general', link: '/pages/admin/general-status' },
+      { title: 'Estatus proceso', link: '/pages/admin/status-process' },
+      { title: 'Estatus sinisestros', link: '/pages/admin/claims-status' },
+      { title: 'Etapas', link: '/pages/admin/stages' },
+      { title: 'Etiqutas bien', link: '/pages/admin/label-okey' },
+      { title: 'Fracciones', link: '/pages/admin/fractions' },
+      { title: 'Gavetas', link: '/pages/admin/drawers' },
+      { title: 'Genericos', link: '/pages/admin/generics' },
+      { title: 'Gestión', link: '/pages/admin/management' },
+      { title: 'Guarda Valores', link: '/pages/admin/save-values' },
+      { title: 'Identificador', link: '/pages/admin/identifier' },
+      { title: 'Indiciados', link: '/pages/admin/indiciados' },
+      {
+        title: 'Instituciones Emisoras',
+        link: '/pages/admin/issuing-institution'
+      },
+      { title: 'Juzgados', link: '/pages/admin/court' },
+      { title: 'Leyendas', link: '/pages/admin/legends/official' },
+      { title: 'Localidades', link: '/pages/admin/localitys' },
+      { title: 'Lotes', link: '/pages/admin/batch' },
+      {
+        title: 'Medio fotografia',
+        link: '/pages/admin/medium-photography'
+      },
+      { title: 'Medio imagen', link: '/pages/admin/half-image' },
+      { title: 'MinPub', link: '/pages/admin/minpub' },
+      { title: 'Motivo Revision', link: '/pages/admin/revision-reason' },
+      {
+        title: 'Motivos no entrega',
+        link: '/pages/admin/reasons/non-delivery-reasons'
+      },
+      { title: 'Municipios', link: '/pages/admin/municipalitys' },
+      { title: 'Normas', link: '/pages/admin/norms' },
+      { title: 'Notarios', link: '/pages/admin/notary' },
+      { title: 'Parrafos', link: '/pages/admin/paragraphs' },
+      { title: 'Penalizaciones', link: '/pages/admin/penalty' },
+      { title: 'Peritos', link: '/pages/admin/proficient' },
+      { title: 'Personas', link: '/pages/admin/person' },
+      { title: 'Preguntas', link: '/pages/admin/question' },
+      { title: 'Procedencia', link: '/pages/admin/origin' },
+      { title: 'Procedencia Cisi', link: '/pages/admin/origin-cisi' },
+      { title: 'Procesos SISE', link: '/pages/admin/siseProcess' },
+      { title: 'Puntuaciones', link: '/pages/admin/score' },
+      { title: 'R Asunt Dic', link: '/pages/admin/r-asunt-dic' },
+      { title: 'Racks', link: '/pages/admin/rack' },
+      { title: 'Regulatory', link: '/pages/admin/regulatory' },
+      {
+        title: 'Reporte Indicadores',
+        link: '/pages/admin/indicator-report'
+      },
+      { title: 'Respuestas', link: '/pages/admin/response' },
+      { title: 'Respuestas REPUVE', link: '/pages/admin/response-repuve' },
+      {
+        title: 'Sat Clasificacion',
+        link: '/pages/admin/sat-clasification'
       },
       {
-        title: 'Gavetas',
-        link: '/pages/admin/drawers'
+        title: 'Sat Subclasificacion',
+        link: '/pages/admin/sat-subclasification'
       },
-      // {
-      //   title: 'Estantes',
-      //   link: '/pages/admin/shelves'
-      // }
-
-    ],
+      { title: 'Series IFAI', link: '/pages/admin/ifai-serie' },
+      { title: 'Servicios', link: '/pages/admin/service-cat' },
+      { title: 'Situacion Bien', link: '/pages/admin/good-situation' },
+      { title: 'Sssubtipo bien', link: '/pages/admin/good-sssubtype' },
+      { title: 'Ssubtipo bien', link: '/pages/admin/good-ssubtype' },
+      { title: 'SubDelegaciones', link: '/pages/admin/subdelegation' },
+      { title: 'Subtipo Bienes', link: '/pages/admin/goods-subtype' },
+      { title: 'Subtipo bien', link: '/pages/admin/good-subtype' },
+      { title: 'Sustentos Legales', link: '/pages/admin/legal-support' },
+      { title: 'Tipo Bien', link: '/pages/admin/good-type' },
+      { title: 'Tipo Bienes', link: '/pages/admin/typegood' },
+      { title: 'Tipo Docto', link: '/pages/admin/typedocto' },
+      { title: 'Tipo Siniestro', link: '/pages/admin/sinister' },
+      { title: 'Tipo de Almacenes', link: '/pages/admin/typewarehouses' },
+      { title: 'Tipo de Servicios', link: '/pages/admin/type-services' },
+      {
+        title: 'Tipo orden servicio',
+        link: '/pages/admin/typeorderservices'
+      },
+      { title: 'Tipo relevante', link: '/pages/admin/typerelevant' },
+      { title: 'Zona Geográficas', link: '/pages/admin/zone-geographic' }
+    
+    ]
   },
   {
     title:'Solicitudes',
@@ -740,12 +480,12 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
 
       {
-        title: 'Información de Bienes por Tipo y Subtipo',
+        title: '**Información de Bienes por Tipo y Subtipo',
         link: '/pages/executive-processes/info-goods-type-subtype',
       },
 
       {
-        title: 'Integración Simplificada de Recepción Documental',
+        title: '**Integración Simplificada de Recepción Documental',
         link: '/pages/executive-processes/sim-doc-Recep-Int',
       },
 

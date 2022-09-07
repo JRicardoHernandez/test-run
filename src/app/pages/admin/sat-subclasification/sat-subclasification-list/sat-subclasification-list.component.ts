@@ -133,7 +133,7 @@ export class SatSubclasificationListComponent extends BasePage implements OnInit
         this.service.delete(event.data.id).subscribe(data => {
           this.readSatSubclasification();
         }, err => {
-          console.log(err);
+          console.error(err);
         })
 
       }

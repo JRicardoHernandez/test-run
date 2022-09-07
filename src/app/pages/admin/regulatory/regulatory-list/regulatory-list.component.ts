@@ -152,7 +152,7 @@ export class RegulatoryListComponent extends BasePage {
         this.service.delete(event.data.id).subscribe(data =>{
           this.readRegulatory();
         },err =>{
-          console.log(err);
+          console.error(err);
         })
        
       }
